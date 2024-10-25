@@ -1,0 +1,44 @@
+/* Estilo para el menú lateral */
+.menu-lateral {
+    width: 200px;
+    height: 100vh;
+    background-color: #333; /* Fondo oscuro para el menú */
+    position: fixed; /* Fijo en la parte izquierda */
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.menu-lateral ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    margin: 20px 0;
+}
+
+.menu-lateral ul li button {
+    width: 100%;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+}
+
+.menu-lateral ul li button:hover {
+    background-color: #555;
+}
+
+/* Ajustamos el contenido principal para que no se sobreponga al menú */
+.hoja {
+    margin-left: 220px; /* Dejamos espacio para el menú */
+    padding: 20px;
+    background-color: #fffefe;
+    border: 5px solid #000000;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    overflow: auto;
+}

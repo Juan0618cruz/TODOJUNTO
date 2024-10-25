@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase Agosto 15: Inteligencia Artificial y Tecnología</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="fondo"></div>
+
+    <div class="menu-lateral">
+        <ul>
+            <li><button onclick="mostrarContenido('opcion1')">Todas las Imagenes </button></li>
+            <li><button onclick="mostrarContenido('opcion2')">Descripción de la invención</button></li>
+            <li><button onclick="mostrarContenido('opcion3')">Juego de Tres en Raya</button></li>
+            <li><button onclick="mostrarContenido('opcion4')">PARCIAL PREG 5 logic.py</button></li>
+            <li><button onclick="mostrarContenido('opcion5')">PARCIAL PREG 6 </button></li>
+        </ul>
+    </div>
+
+    <div class="hoja" id="contenido">
+        <h1>INTELIGENCIA ARTIFICIAL</h1>
+        <h2>Juan Pablo Cruz Ibarra</h2>
+        <img src="LOGO.PNG" alt="Mi imagen">
+    </div>
+
+    <script>
+        function mostrarContenido(opcion) {
+            var contenido = document.getElementById('contenido');
+            
+            if (opcion === 'opcion1') {
+               contenido.innerHTML = ` TODAS LAS IMAGENES TRABAJADAS EN LAS 2 MATERIAS 
+                <h1>GESTION DE LA TECNOLOGIA - INTELIGENCIA ARTIFICIAL</h1>
+ <h1></h1>               
+<img src="img/j1.png" alt="Mi imagen">
+<img src="img/j2.png" alt="Mi imagen">
+<img src="img/j3.png" alt="Mi imagen">
+<h1></h1>
+<h1>LOGICA PROPOSICIONAL </h1>
+<img src="img/and.PNG" alt="Mi imagen">
+<img src="img/not.PNG" alt="Mi imagen">
+<img src="img/or.PNG" alt="Mi imagen">
+<h1></h1>
+<h1>CODIGO TRES EN RAYA JUEGO </h1>
+<img src="img/r1.png" alt="Mi imagen">
+<img src="img/r2.png" alt="Mi imagen">
+<img src="img/r3.png" alt="Mi imagen">
+<img src="img/r4.png" alt="Mi imagen">
+
+               `;
+         
+            } else if (opcion === 'opcion2') {
+    contenido.innerHTML = `
+    <h1>Sistema Inteligente de Diseño de Interiores Personalizado basado en IA</h1>
+    <h2>Resumen</h2>
+    <p>Este sistema innovador utiliza inteligencia artificial para revolucionar la forma en que diseñamos nuestros espacios interiores. Al analizar las preferencias del usuario, las dimensiones del espacio y las tendencias de diseño, el sistema genera automáticamente múltiples opciones de diseño personalizadas. Además, incorpora realidad aumentada para permitir al usuario visualizar los diseños en tiempo real en su propio espacio. Este sistema resuelve el problema de la complejidad y el tiempo que implica diseñar un interior, permitiendo a cualquier persona crear un espacio que refleje su estilo personal de manera rápida y sencilla.</p>
+    
+    <h2>Descripción de la invención</h2>
+    
+    <h3>Introducción y campo técnico</h3>
+    <p>El diseño de interiores es un proceso creativo que requiere conocimientos especializados y mucho tiempo. Con el avance de la inteligencia artificial, es posible automatizar muchas de las tareas involucradas en este proceso, haciendo que el diseño de interiores sea más accesible y eficiente. Este documento presenta un sistema inteligente de diseño de interiores que utiliza algoritmos de aprendizaje automático para generar diseños personalizados y atractivos.</p>
+    
+    <h3>Antecedentes de la invención (estado de la técnica)</h3>
+    <p>Actualmente existen herramientas de diseño de interiores que permiten a los usuarios crear diseños en 2D y 3D. Sin embargo, estas herramientas suelen requerir conocimientos técnicos y no ofrecen un alto grado de personalización. El sistema propuesto se diferencia de las herramientas existentes al utilizar inteligencia artificial para generar diseños completamente personalizados y al incorporar realidad aumentada para una visualización más inmersiva.</p>
+    
+    <h3>Problema técnico que resuelve la invención</h3>
+    <p>El principal problema que resuelve esta invención es la complejidad y el tiempo que implica el diseño de interiores. El sistema propuesto permite a cualquier persona, sin importar su experiencia en diseño, crear un espacio personalizado y atractivo de manera rápida y sencilla.</p>
+    
+    <h3>Descripción detallada de la invención</h3>
+    <p>El sistema se compone de los siguientes módulos:</p>
+    <ul>
+        <li><strong>Módulo de entrada de datos:</strong> El usuario ingresa información sobre sus preferencias de diseño, las dimensiones del espacio y cualquier restricción o requisito específico.</li>
+        <li><strong>Módulo de generación de diseños:</strong> El sistema utiliza algoritmos de aprendizaje automático para generar múltiples opciones de diseño basadas en los datos de entrada.</li>
+        <li><strong>Módulo de visualización en realidad aumentada:</strong> El usuario puede visualizar los diseños generados en tiempo real en su propio espacio utilizando un dispositivo móvil o unas gafas de realidad aumentada.</li>
+        <li><strong>Módulo de interacción:</strong> El usuario puede interactuar con los diseños, realizando modificaciones y seleccionando su opción preferida.</li>
+    </ul>
+    
+    <h3>Ejemplo de realización de la invención</h3>
+    <h4>Diseño de una oficina en casa</h4>
+    <ul>
+        <li><strong>Entrada de datos:</strong> Un profesional que trabaja desde casa necesita un espacio de trabajo funcional y estimulante. Ingresa las dimensiones de su oficina en casa y selecciona un estilo moderno y minimalista.</li>
+        <li><strong>Generación de diseños:</strong> El sistema genera opciones de diseño que incluyen escritorios ergonómicos, sillas cómodas y sistemas de almacenamiento inteligentes.</li>
+        <li><strong>Personalización:</strong> El usuario decide agregar una pared con pizarra para tomar notas y un área de descanso con un sofá y una pequeña mesa de café.</li>
+    </ul>
+    `;
+            } else if (opcion === 'opcion3') {
+    contenido.innerHTML = `
+    <h1>Descripción del Código: Un Juego de Tres en Raya con Inteligencia Artificial</h1>
+    <h2>¿Qué hace este código?</h2>
+    <p>Este código en Python implementa un juego de tres en raya (tic-tac-toe) donde un jugador humano se enfrenta a una computadora. La computadora utiliza el algoritmo minimax para tomar decisiones estratégicas y tratar de ganar la partida.</p>
+    
+    <h2>¿Cómo funciona?</h2>
+    <ol>
+        <li><strong>Definición de Jugadores y Tablero:</strong>
+            <ul>
+                <li>Se asignan valores numéricos a los jugadores (humano y computadora).</li>
+                <li>Se crea un tablero de 3x3 representado como una lista de listas, donde cada celda puede estar vacía (0), ocupada por el humano (-1) o por la computadora (1).</li>
+            </ul>
+        </li>
+        <li><strong>Verificación de Ganador y Empate:</strong>
+            <ul>
+                <li>La función <code>ganador</code> verifica si hay una combinación ganadora en el tablero, revisando todas las posibles filas, columnas y diagonales.</li>
+                <li>La función <code>tablero_lleno</code> verifica si todas las celdas del tablero están ocupadas, indicando un empate.</li>
+            </ul>
+        </li>
+        <li><strong>Evaluación del Estado del Tablero:</strong>
+            <ul>
+                <li>La función <code>evaluar</code> asigna un valor numérico a cada estado del tablero: 1 si la computadora ha ganado, -1 si el humano ha ganado y 0 si hay un empate o el juego aún no ha terminado.</li>
+            </ul>
+        </li>
+        <li><strong>Algoritmo Minimax:</strong>
+            <ul>
+                <li>Esta es la función principal de la inteligencia artificial.</li>
+                <li>Explora todos los posibles movimientos futuros, evaluando el resultado de cada uno de ellos recursivamente.</li>
+                <li>Para la computadora, busca maximizar el valor de la evaluación, mientras que para el humano, busca minimizarlo.</li>
+                <li>La poda alfa-beta (implícita en el código) se utiliza para optimizar la búsqueda, evitando explorar ramas del árbol de juego que no pueden llevar a un mejor resultado.</li>
+            </ul>
+        </li>
+        <li><strong>Movimiento de la Computadora:</strong>
+            <ul>
+                <li>La función <code>movimiento_computadora</code> utiliza el algoritmo minimax para encontrar el mejor movimiento posible para la computadora, es decir, el movimiento que maximiza sus posibilidades de ganar o minimizar las del humano.</li>
+            </ul>
+        </li>
+        <li><strong>Simulación del Juego:</strong>
+            <ul>
+                <li>El bucle <code>while True</code> controla el flujo del juego.</li>
+                <li>En cada turno, el jugador humano introduce su movimiento y la computadora realiza el suyo utilizando la función <code>movimiento_computadora</code>.</li>
+                <li>El juego continúa hasta que hay un ganador o se produce un empate.</li>
+            </ul>
+        </li>
+    </ol>
+    
+    <h2>En resumen:</h2>
+    <p>El código crea un juego de tres en raya donde la computadora utiliza una estrategia basada en el algoritmo minimax para tomar decisiones inteligentes y desafiar al jugador humano. El minimax permite a la computadora explorar todas las posibles secuencias de movimientos y elegir la que le proporciona la mejor ventaja.</p>
+    
+    <h2>¿Qué más podrías hacer con este código?</h2>
+    <ul>
+        <li><strong>Dificultad ajustable:</strong> Puedes modificar la profundidad de la búsqueda en el algoritmo minimax para ajustar la dificultad del juego.</li>
+        <li><strong>Otros juegos:</strong> El algoritmo minimax se puede aplicar a otros juegos de dos jugadores con información completa, como el ajedrez o el othello.</li>
+        <li><strong>Visualización:</strong> Puedes mejorar la interfaz del juego agregando gráficos y animaciones.</li>
+    </ul>
+    
+    <p>Este código proporciona una base sólida para entender cómo implementar una inteligencia artificial simple en un juego.</p>
+    `;
+} else if (opcion === 'opcion4') {
+    contenido.innerHTML = `
+    <h1>Comentarios generados para el archivo logic.py</h1>
+
+    <h2>Resumen</h2>
+    <p>Este archivo <code>logic.py</code> implementa un conjunto de clases que representan construcciones de lógica proposicional como <strong>negaciones</strong>, <strong>conjunciones</strong>, <strong>disyunciones</strong>, <strong>implicaciones</strong> y <strong>bicondicionales</strong>. El propósito de estas clases es modelar y evaluar fórmulas lógicas mediante el uso de un modelo que asigna valores de verdad a símbolos. También incluye una función de <strong>model checking</strong> para verificar si una base de conocimiento implica una consulta.</p>
+
+    <h2>Descripción de la implementación</h2>
+    
+    <h3>Clase Sentence</h3>
+    <p>La clase base <code>Sentence</code> es abstracta y representa cualquier proposición lógica. Define métodos como:</p>
+    <ul>
+        <li><strong>evaluate(self, model):</strong> Método abstracto que deberá ser implementado en las subclases para evaluar la proposición lógica según un modelo dado.</li>
+        <li><strong>formula(self):</strong> Devuelve una representación en forma de cadena de la proposición.</li>
+        <li><strong>symbols(self):</strong> Devuelve un conjunto con los símbolos usados en la proposición.</li>
+    </ul>
+    
+    <h3>Clase Symbol</h3>
+    <p>La clase <code>Symbol</code> hereda de <code>Sentence</code> y representa un símbolo lógico individual. Los métodos clave incluyen:</p>
+    <ul>
+        <li><strong>evaluate(self, model):</strong> Evalúa el valor de verdad del símbolo basándose en el modelo proporcionado.</li>
+        <li><strong>formula(self):</strong> Retorna el nombre del símbolo.</li>
+        <li><strong>symbols(self):</strong> Retorna un conjunto que contiene únicamente el símbolo.</li>
+    </ul>
+
+    <h3>Clase Not</h3>
+    <p>La clase <code>Not</code> representa una negación lógica. Implementa los siguientes métodos:</p>
+    <ul>
+        <li><strong>evaluate(self, model):</strong> Devuelve el valor inverso del operando lógico.</li>
+        <li><strong>formula(self):</strong> Devuelve la fórmula en forma de ¬(proposición).</li>
+    </ul>
+    
+    <h3>Clases And y Or</h3>
+    <p>Las clases <code>And</code> y <code>Or</code> representan, respectivamente, conjunciones (Y) y disyunciones (O) lógicas. Sus métodos incluyen:</p>
+    <ul>
+        <li><strong>evaluate(self, model):</strong> Evalúa si todas las conjunciones son verdaderas (<code>And</code>) o si al menos una de las disyunciones es verdadera (<code>Or</code>).</li>
+        <li><strong>formula(self):</strong> Devuelve la fórmula usando los símbolos ∧ o ∨, según corresponda.</li>
+    </ul>
+    
+    <h3>Clase Implication</h3>
+    <p>La clase <code>Implication</code> representa una implicación lógica. Verifica si, cuando el antecedente es verdadero, el consecuente también lo es.</p>
+    
+    <h3>Clase Biconditional</h3>
+    <p>La clase <code>Biconditional</code> verifica si dos proposiciones tienen el mismo valor de verdad, devolviendo verdadero si ambas son iguales.</p>
+    
+    <h3>Función model_check</h3>
+    <p>La función <code>model_check</code> verifica si un conjunto de conocimiento implica una consulta lógica mediante el uso de asignaciones de valores de verdad a los símbolos involucrados.</p>
+
+    <h3>Ejemplo de uso</h3>
+    <p>El archivo permite construir proposiciones como <code>And(Symbol("A"), Not(Symbol("B")))</code>, lo que representa una conjunción de un símbolo "A" verdadero y la negación de "B". Al evaluar este conjunto bajo un modelo dado, se determinará si es verdadero o falso según los valores asignados a "A" y "B".</p>
+    
+    <h1>Comentarios generados para el archivo logic.py</h1>
+    <pre><code>
+import itertools
+
+
+class Sentence():
+    """
+    Clase base para representar una oración lógica.
+    """
+
+    def evaluate(self, model):
+        """
+        Evalúa la oración lógica utilizando un modelo.
+        En este caso, es un método abstracto que será implementado en clases derivadas.
+        """
+        raise Exception("nada que evaluar")
+
+    def formula(self):
+        """
+        Devuelve una representación de la fórmula lógica en forma de cadena de texto.
+        """
+        return ""
+
+    def symbols(self):
+        """
+        Devuelve un conjunto de todos los símbolos presentes en la oración lógica.
+        """
+        return set()
+
+    @classmethod
+    def validate(cls, sentence):
+        """
+        Valida si un objeto es una instancia de la clase Sentence.
+        """
+        if not isinstance(sentence, Sentence):
+            raise TypeError("debe ser una oración lógica")
+
+    @classmethod
+    def parenthesize(cls, s):
+        """
+        Coloca paréntesis en una expresión si no los tiene ya.
+        """
+        def balanced(s):
+            """
+            Verifica si una cadena tiene paréntesis balanceados.
+            """
+            count = 0
+            for c in s:
+                if c == "(":
+                    count += 1
+                elif c == ")":
+                    if count <= 0:
+                        return False
+                    count -= 1
+            return count == 0
+
+        if not len(s) or s.isalpha() or (
+            s[0] == "(" and s[-1] == ")" and balanced(s[1:-1])
+        ):
+            return s
+        else:
+            return f"({s})"
+
+
+class Symbol(Sentence):
+    """
+    Representa un símbolo lógico.
+    """
+
+    def __init__(self, name):
+        self.name = name
+
+    def __eq__(self, other):
+        return isinstance(other, Symbol) and self.name == other.name
+
+    def __hash__(self):
+        return hash(("symbol", self.name))
+
+    def __repr__(self):
+        return self.name
+
+    def evaluate(self, model):
+        """
+        Evalúa el valor del símbolo en un modelo dado.
+        """
+        try:
+            return bool(model[self.name])
+        except KeyError:
+            raise EvaluationException(f"variable {self.name} no está en el modelo")
+
+    def formula(self):
+        return self.name
+
+    def symbols(self):
+        """
+        Devuelve el conjunto que contiene solo este símbolo.
+        """
+        return {self.name}
+
+
+class Not(Sentence):
+    """
+    Representa una negación lógica.
+    """
+    def __init__(self, operand):
+        Sentence.validate(operand)
+        self.operand = operand
+
+    def __eq__(self, other):
+        return isinstance(other, Not) and self.operand == other.operand
+
+    def __hash__(self):
+        return hash(("not", hash(self.operand)))
+
+    def __repr__(self):
+        return f"Not({self.operand})"
+
+    def evaluate(self, model):
+        """
+        Evalúa la negación, invirtiendo el valor del operando.
+        """
+        return not self.operand.evaluate(model)
+
+    def formula(self):
+        return "¬" + Sentence.parenthesize(self.operand.formula())
+
+    def symbols(self):
+        return self.operand.symbols()
+
+
+class And(Sentence):
+    """
+    Representa una conjunción lógica (Y).
+    """
+    def __init__(self, *conjuncts):
+        for conjunct in conjuncts:
+            Sentence.validate(conjunct)
+        self.conjuncts = list(conjuncts)
+
+    def __eq__(self, other):
+        return isinstance(other, And) and self.conjuncts == other.conjuncts
+
+    def __hash__(self):
+        return hash(
+            ("and", tuple(hash(conjunct) for conjunct in self.conjuncts))
+        )
+
+    def __repr__(self):
+        conjunctions = ", ".join(
+            [str(conjunct) for conjunct in self.conjuncts]
+        )
+        return f"And({conjunctions})"
+
+    def add(self, conjunct):
+        """
+        Añade un nuevo conjunción a la lista.
+        """
+        Sentence.validate(conjunct)
+        self.conjuncts.append(conjunct)
+
+    def evaluate(self, model):
+        """
+        Evalúa si todas las conjunciones son verdaderas.
+        """
+        return all(conjunct.evaluate(model) for conjunct in self.conjuncts)
+
+    def formula(self):
+        """
+        Devuelve la fórmula de la conjunción.
+        """
+        if len(self.conjuncts) == 1:
+            return self.conjuncts[0].formula()
+        return " ∧ ".join([Sentence.parenthesize(conjunct.formula())
+                           for conjunct in self.conjuncts])
+
+    def symbols(self):
+        return set.union(*[conjunct.symbols() for conjunct in self.conjuncts])
+
+
+class Or(Sentence):
+    """
+    Representa una disyunción lógica (O).
+    """
+    def __init__(self, *disjuncts):
+        for disjunct in disjuncts:
+            Sentence.validate(disjunct)
+        self.disjuncts = list(disjuncts)
+
+    def __eq__(self, other):
+        return isinstance(other, Or) and self.disjuncts == other.disjuncts
+
+    def __hash__(self):
+        return hash(
+            ("or", tuple(hash(disjunct) for disjunct in self.disjuncts))
+        )
+
+    def __repr__(self):
+        disjuncts = ", ".join([str(disjunct) for disjunct in self.disjuncts])
+        return f"Or({disjuncts})"
+
+    def evaluate(self, model):
+        """
+        Evalúa si al menos una de las disyunciones es verdadera.
+        """
+        return any(disjunct.evaluate(model) for disjunct in self.disjuncts)
+
+    def formula(self):
+        """
+        Devuelve la fórmula de la disyunción.
+        """
+        if len(self.disjuncts) == 1:
+            return self.disjuncts[0].formula()
+        return " ∨  ".join([Sentence.parenthesize(disjunct.formula())
+                            for disjunct in self.disjuncts])
+
+    def symbols(self):
+        return set.union(*[disjunct.symbols() for disjunct in self.disjuncts])
+
+
+class Implication(Sentence):
+    """
+    Representa una implicación lógica (si... entonces...).
+    """
+    def __init__(self, antecedent, consequent):
+        Sentence.validate(antecedent)
+        Sentence.validate(consequent)
+        self.antecedent = antecedent
+        self.consequent = consequent
+
+    def __eq__(self, other):
+        return (isinstance(other, Implication)
+                and self.antecedent == other.antecedent
+                and self.consequent == other.consequent)
+
+    def __hash__(self):
+        return hash(("implies", hash(self.antecedent), hash(self.consequent)))
+
+    def __repr__(self):
+        return f"Implication({self.antecedent}, {self.consequent})"
+
+    def evaluate(self, model):
+        """
+        Evalúa la implicación.
+        """
+        return ((not self.antecedent.evaluate(model))
+                or self.consequent.evaluate(model))
+
+    def formula(self):
+        antecedent = Sentence.parenthesize(self.antecedent.formula())
+        consequent = Sentence.parenthesize(self.consequent.formula())
+        return f"{antecedent} => {consequent}"
+
+    def symbols(self):
+        return set.union(self.antecedent.symbols(), self.consequent.symbols())
+
+
+class Biconditional(Sentence):
+    """
+    Representa una bicondicional lógica (si y solo si).
+    """
+    def __init__(self, left, right):
+        Sentence.validate(left)
+        Sentence.validate(right)
+        self.left = left
+        self.right = right
+
+    def __eq__(self, other):
+        return (isinstance(other, Biconditional)
+                and self.left == other.left
+                and self.right == other.right)
+
+    def __hash__(self):
+        return hash(("biconditional", hash(self.left), hash(self.right)))
+
+    def __repr__(self):
+        return f"Biconditional({self.left}, {self.right})"
+
+    def evaluate(self, model):
+        """
+        Evalúa si ambas proposiciones tienen el mismo valor de verdad.
+        """
+        return ((self.left.evaluate(model)
+                 and self.right.evaluate(model))
+                or (not self.left.evaluate(model)
+                    and not self.right.evaluate(model)))
+
+    def formula(self):
+        left = Sentence.parenthesize(str(self.left))
+        right = Sentence.parenthesize(str(self.right))
+        return f"{left} <=> {right}"
+
+    def symbols(self):
+        return set.union(self.left.symbols(), self.right.symbols())
+
+
+def model_check(knowledge, query):
+    """
+    Verifica si la base de conocimiento implica una consulta.
+    """
+
+    def check_all(knowledge, query, symbols, model):
+        """
+        Verifica si la base de conocimiento implica la consulta en un modelo dado.
+        """
+
+        # Si el modelo tiene una asignación para cada símbolo
+        if not symbols:
+
+            # Si la base de conocimiento es verdadera en el modelo, entonces la consulta también debe ser verdadera
+            if all(sentence.evaluate(model) for sentence in knowledge):
+                return query.evaluate(model)
+
+            return True
+
+        # Toma un símbolo
+        symbol = symbols.pop()
+
+        # Verifica ambos casos: verdadero y falso
+        model[symbol] = True
+        if check_all(knowledge, query, symbols, model):
+            return True
+
+        model[symbol] = False
+        return check_all(knowledge, query, symbols, model)
+
+    symbols = set.union(*(sentence.symbols() for sentence in knowledge)).union(query.symbols())
+    return check_all(knowledge, query, symbols, {})
+
+
+# Ejemplo de uso
+if __name__ == '__main__':
+    # Definir algunos símbolos
+    p = Symbol('p')
+    q = Symbol('q')
+
+    # Crear una base de conocimiento
+    knowledge = [
+        Implication(p, q),
+        Not(q)
+    ]
+
+    # Consultar
+    query = Not(p)
+
+    # Verificar
+    print(model_check(knowledge, query))  # Debe devolver True
+    </code></pre>
+      `;
+
+    } else if (opcion === 'opcion5') {
+    contenido.innerHTML = `
+    <h2>Verificación de Proposición sobre la Visita de Estudiantes</h2>
+    <pre>
+rain = False         # True si llueve, False si no
+bbc = False          # True si los estudiantes visitaron BBC
+unimayor = True      # True si los estudiantes visitaron Unimayor
+
+# Conocimiento:
+# Si no llueve, los estudiantes visitan BBC
+if not rain:
+    bbc = True
+
+# Los estudiantes visitaron BBC o Unimayor pero no ambos (XOR)
+bbc_unimayor = (bbc or unimayor) and not (bbc and unimayor)
+
+# Los estudiantes visitaron Unimayor
+unimayor = True  # Afirmación directa
+
+# Inferencia sobre BBC y el clima
+print("¿Los estudiantes visitaron BBC?", bbc)
+print("¿Llovió?", rain)
+    </pre>
+
+    # Respuesta: 
+    ¿Los estudiantes visitaron BBC? True
+    ¿Llovió? False
+    `;
+    }
+        }
+    </script>
+</body>
+</html>
